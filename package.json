@@ -1,0 +1,41 @@
+{
+  "name": "dsh-artifact-preview",
+  "version": "0.1.0",
+  "description": "Codex-style artifact preview for DeepSeek Harness (DSH): produced-files row in chat with inline image thumbnails, and a resizable split-screen side preview panel rendering Markdown / source code / CSV / JSON / images / HTML, plus localhost port preview.",
+  "author": "nirvanaslash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirvanaslash/dsh-artifact-preview.git"
+  },
+  "homepage": "https://github.com/nirvanaslash/dsh-artifact-preview#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "artifact",
+    "preview",
+    "markdown",
+    "deepseek-harness"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
