@@ -1,6 +1,6 @@
 {
   "name": "dsh-artifact-preview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Codex-style artifact preview for DeepSeek Harness (DSH): produced-files row in chat with inline image thumbnails, and a resizable split-screen side preview panel rendering Markdown / source code / CSV / JSON / images / HTML, plus localhost port preview.",
   "author": "nirvanaslash",
   "repository": {
@@ -24,7 +24,8 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "lib"
+    "lib",
+    "README.zh-CN.md"
   ],
   "license": "MIT",
   "dsh": {

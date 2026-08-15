@@ -1,5 +1,7 @@
 # dsh-artifact-preview
 
+[English](README.md) · [中文](README.zh-CN.md)
+
 Codex-style artifact preview for **DeepSeek Harness (DSH)**.
 
 `dsh-artifact-preview` is a client plugin (`dsh.client.platform: "web"`) that makes produced files visible and inspectable right in the chat:
