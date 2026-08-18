@@ -35,7 +35,7 @@ dsh plugin --profile web add github:nirvanaslash/dsh-artifact-preview
 
 ## 兼容性
 
-- 面向 DSH `0.1.0-rc.6` 客户端插件 ABI（`window.__ModuleLoader__` 模块、`dsh.client` 元数据、`conversation.chat.turnTail` 链槽）。链槽选举依赖低 `priority`（`-100`）赢得产物行；DSH 升级后请实测。
+- 面向 DSH `0.1.0-rc.7`（DSH Desktop 2.0.1 内置）客户端插件 ABI：`window.__ModuleLoader__` 模块格式、`dsh.client` 元数据、`dsh.bundle` patch 注册、`conversation.chat.turnTail` 链槽。链槽选举依赖低 `priority`（`-100`）赢得产物行、优先于官方 deliverables 行；DSH 升级后请实测。
 
 ## 已知边界
 

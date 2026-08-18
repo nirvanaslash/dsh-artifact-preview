@@ -35,7 +35,7 @@ Once the package is published to npm, `dsh plugin --profile web add dsh-artifact
 
 ## Compatibility
 
-- Built for DSH `0.1.0-rc.6` client plugin ABI (`window.__ModuleLoader__` module, `dsh.client` metadata, `conversation.chat.turnTail` chain slot). Chain-slot election relies on low `priority` (`-100`) to win the produced-files row; verify behavior after DSH upgrades.
+- Built for DSH `0.1.0-rc.7` (bundled in DSH Desktop 2.0.1) client plugin ABI: `window.__ModuleLoader__` module format, `dsh.client` metadata, `dsh.bundle` patch registration, and the `conversation.chat.turnTail` chain slot. Chain-slot election relies on low `priority` (`-100`) to win the produced-files row over the official deliverables row; verify behavior after DSH upgrades.
 
 ## Known boundaries
 
