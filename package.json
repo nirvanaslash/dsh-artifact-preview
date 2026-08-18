@@ -25,10 +25,14 @@
   },
   "files": [
     "lib",
+    "cordis.patch.yml",
     "README.zh-CN.md"
   ],
   "license": "MIT",
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "inject": [
         "@deepseek-ai/dsh-client-ui-conversation"

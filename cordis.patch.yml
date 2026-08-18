@@ -1,0 +1,14 @@
+# dsh-artifact-preview bundle patch
+#
+# 这层 patch 把本包注册为 profile 中的一个「活动插件行」：
+#   - Loader 会加载包的主入口 lib/index.js（它必须是合法 Cordis 插件，导出 apply，见 host-entry-template.js）；
+#   - dsh-client-modules 扫描到这一行后，会把浏览器端产物 lib/client.js 注入
+#     window.__DSH_BOOT__（以 /plugins/dsh-artifact-preview/client.js 提供），
+#     从而让预览面板出现在对话界面里。
+#
+# dsh plugin add 检测到包声明了 dsh.bundle.patch 后会自动把本包追加进
+# dsh.profile.bundles，无需手动改任何 profile 文件；dsh plugin remove 会
+# 同时移除依赖和这一层。
+- insert:
+    - id: artifact-preview
+      name: 'dsh-artifact-preview'
