@@ -18,13 +18,15 @@ Codex-style artifact preview for **DeepSeek Harness (DSH)**.
 
 ## Install
 
-From the DSH web **Settings → Plugins → Marketplace** (search `dsh-artifact-preview`), or via CLI:
+From GitHub (the package declares `dsh.bundle` + `dsh.client`, so `dsh plugin add` installs the dependency **and** auto-registers the preview as an active client-plugin layer — no manual profile editing):
 
 ```sh
-dsh plugin --profile web add dsh-artifact-preview
+dsh plugin --profile web add github:nirvanaslash/dsh-artifact-preview
 ```
 
 Restart the `dsh web` service (or DSH Desktop) and refresh the page.
+
+Once the package is published to npm, `dsh plugin --profile web add dsh-artifact-preview` and the Marketplace search path work the same way.
 
 ## Prerequisites
 

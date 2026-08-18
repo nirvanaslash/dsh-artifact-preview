@@ -18,13 +18,15 @@
 
 ## 安装
 
-DSH Web 的 **设置 → 插件 → 市场**（搜索 `dsh-artifact-preview`），或命令行：
+从 GitHub 安装（本包同时声明了 `dsh.bundle` 与 `dsh.client`，`dsh plugin add` 会一次性装入依赖并自动注册为活动客户端插件层，无需手工编辑 profile）：
 
 ```sh
-dsh plugin --profile web add dsh-artifact-preview
+dsh plugin --profile web add github:nirvanaslash/dsh-artifact-preview
 ```
 
 重启 `dsh web` 服务（或 DSH Desktop）并刷新页面。
+
+发布到 npm 后，`dsh plugin --profile web add dsh-artifact-preview` 与市场搜索安装同样可用。
 
 ## 前置条件
 
